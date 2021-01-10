@@ -153,13 +153,13 @@ input, select, textarea {
 
 	body {
 		background-color: #ffffff;
-		color: #000000;
+		color: #141414;
 	}
 
 	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 1rem;
-		font-weight: 300;
+		font-family: Helvetica, sans-serif;
+		font-size: 1.2rem;
+		font-weight: 250;
 		line-height: 1.65;
 	}
 
@@ -2664,7 +2664,7 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 2rem 0;
 			width: 75%;
-			
+
 		}
 
 			.image.fit img {
