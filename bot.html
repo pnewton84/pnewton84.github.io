@@ -12,20 +12,20 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="title" content="I made a Twitter bot and what it tweeted shocked me!">
-		<meta name="description" content="Tips on how to make a Twitter bot.">
+		<meta name="description" content="Twitter bots can do a lot more than just spam hashtags and relentlessly follow users. Here's how I made my Twitter bot, and what it got up to.">
 
 				<!-- Open Graph / Facebook -->
 					<meta property="og:type" content="website">
 					<meta property="og:url" content="https://pnewton84.github.io/bot.html">
 					<meta property="og:title" content="I made a Twitter bot and what it tweeted shocked me!">
-					<meta property="og:description" content="Tips on how to make a Twitter bot.">
+					<meta property="og:description" content="Twitter bots can do a lot more than just spam hashtags and relentlessly follow users. Here's how I made my Twitter bot, and what it got up to.">
 					<meta property="og:image" content="https://pnewton84.github.io/images/bot-banner.jpg">
 
 				<!-- Twitter -->
 					<meta property="twitter:card" content="summary_large_image">
 					<meta property="twitter:url" content="https://pnewton84.github.io/bot.html">
 					<meta property="twitter:title" content="I made a Twitter bot and what it tweeted shocked me!">
-					<meta property="twitter:description" content="Tips on how to make a Twitter bot.">
+					<meta property="twitter:description" content="Twitter bots can do a lot more than just spam hashtags and relentlessly follow users. Here's how I made my Twitter bot, and what it got up to.">
 					<meta property="twitter:image" content="https://pnewton84.github.io/images/bot-banner.jpg">
 
 
@@ -50,7 +50,7 @@
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1>I made a Twitter bot and what it tweeted shocked me!</h1>
-							<p class="major">+ tips on how to make a Twitter bot</p>
+							<p class="major">Twitter bots can do a lot more than just spam hashtags and relentlessly follow users. Here's how I made my Twitter bot, and what it got up to.</p>
 								<ul class="actions stacked">
 								<li><a href="#start" class="button large wide smooth-scroll-middle">Read the blog ↓</a></li>
 								<li><a href="index.html" class="button small wide smooth-scroll-middle">← Return home</a></li>
@@ -71,25 +71,25 @@
 
 							<p>A <a href="https://arxiv.org/pdf/1703.03107.pdf">recent study</a> by @USC and @IndianaUniv claims that there are as many as 48 million bot accounts on Twitter. That’s somewhere between 9% and 15% of Twitter’s active monthly users, and that figure is a ‘conservative estimate’.</p>
 
-<p>Bot accounts are often used to automate retweets of a particular account, or retweet a specific hashtag or phrase to help boost trending topics. They exist to advertise to, or influence, human users. In another study, it was found that <a href="http://firstmonday.org/ojs/index.php/fm/article/view/7090/5653">19% of 2016 US election-related tweets</a> came from bot accounts (see <a href="http://www.politico.com/story/2016/09/donald-trump-twitter-army-228923">Inside Trump’s ‘cyborg’ Twitter army</a>). Bots can be the absolute worst part of Twitter.</p>
+							<p>Bot accounts are often used to automate retweets of a particular account, or retweet a specific hashtag or phrase to help boost trending topics. They exist to advertise to, or influence, human users. In another study, it was found that <a href="http://firstmonday.org/ojs/index.php/fm/article/view/7090/5653">19% of 2016 US election-related tweets</a> came from bot accounts (see <a href="http://www.politico.com/story/2016/09/donald-trump-twitter-army-228923">Inside Trump’s ‘cyborg’ Twitter army</a>). Bots can be the absolute worst part of Twitter.</p>
 
-<p>But bots can also be weirdly entertaining. Bots offer life advice (@nice_tips_bot), generate micropoetry (@poem_exe), new species of digital moths (@mothgenerator) or the moon rise (@moon_rise_bot), or simply tweet the entire works of Shakespeare line-by-line (@botspeare).</p>
+							<p>But bots can also be weirdly entertaining. Bots offer life advice (@nice_tips_bot), generate micropoetry (@poem_exe), new species of digital moths (@mothgenerator) or the moon rise (@moon_rise_bot), or simply tweet the entire works of Shakespeare line-by-line (@botspeare).</p>
 
-<p>This month I set myself the challenge of making a Twitter bot. There are lots of ways to make bots (as <a href="https://botwiki.org/tutorials/twitterbots/">botwiki.org</a> explains), including using <a href="https://github.com/tommeagher/heroku_ebooks">existing code from Github</a> (written in Python and Ruby) and deploying it as an <a href="https://medium.com/science-friday-footnotes/how-to-make-a-twitter-bot-in-under-an-hour-259597558acf">app on Heroku</a>, or by using sites such as <a href="http://cheapbotsdonequick.com/">cheapbotsdonequick.com</a>. However, I made my first bot using <a href="https://medium.com/the-fake-news-reader/tiny-flashing-thumbs-how-to-bot-your-way-to-fake-news-success-f834bf44c4b4">‘SSBot’ by Zach Whalen</a>, which runs in a Google Spreadsheet.</p>
+							<p>This month I set myself the challenge of making a Twitter bot. There are lots of ways to make bots (as <a href="https://botwiki.org/tutorials/twitterbots/">botwiki.org</a> explains), including using <a href="https://github.com/tommeagher/heroku_ebooks">existing code from Github</a> (written in Python and Ruby) and deploying it as an <a href="https://medium.com/science-friday-footnotes/how-to-make-a-twitter-bot-in-under-an-hour-259597558acf">app on Heroku</a>, or by using sites such as <a href="http://cheapbotsdonequick.com/">cheapbotsdonequick.com</a>. However, I made my first bot using <a href="https://medium.com/the-fake-news-reader/tiny-flashing-thumbs-how-to-bot-your-way-to-fake-news-success-f834bf44c4b4">‘SSBot’ by Zach Whalen</a>, which runs in a Google Spreadsheet.</p>
 
-<p>It was then time to decide what my bot would do. From browsing various bots, I enjoyed those that fed pre-existing text through a Markov chain algorithm and mixed it up to produce a plausible, but often nonsensical, tweet. The source text can either be predefined in a Google Sheet, or collected from another Twitter source (e.g. tweets collected from a specific account or hashtag) compiled in a <a href="https://tags.hawksey.info/">TAGS Archive</a>.</p>
+							<p>It was then time to decide what my bot would do. From browsing various bots, I enjoyed those that fed pre-existing text through a Markov chain algorithm and mixed it up to produce a plausible, but often nonsensical, tweet. The source text can either be predefined in a Google Sheet, or collected from another Twitter source (e.g. tweets collected from a specific account or hashtag) compiled in a <a href="https://tags.hawksey.info/">TAGS Archive</a>.</p>
 
-<p>I had my first bot up-and-tweeting within 20 minutes: introducing @universibot. The bot was setup to scan an archive of my organisation’s tweets, and use these to automatically generate new tweets by running them through the algorithm. The reason I did this was to see what basic artificial intelligence would make of the tweets myself and the team were sending out daily. And, if I’m honest, to make me chuckle.</p>
+							<p>I had my first bot up-and-tweeting within 20 minutes: introducing @universibot. The bot was setup to scan an archive of my organisation’s tweets, and use these to automatically generate new tweets by running them through the algorithm. The reason I did this was to see what basic artificial intelligence would make of the tweets myself and the team were sending out daily. And, if I’m honest, to make me chuckle.</p>
 
-<p>Because I’m a responsible bot maker ;-) I made the new account private (so the tweets wouldn’t be picked up by searches, or in fact seen by anyone but myself), and removed any hashtags or @ mentions for double measure. Bots run the risk of being deactivated if they break Twitter’s terms of service, and I wanted to follow bot etiquette (botiquette..!?).</p>
+							<p>Because I’m a responsible bot maker ;-) I made the new account private (so the tweets wouldn’t be picked up by searches, or in fact seen by anyone but myself), and removed any hashtags or @ mentions for double measure. Bots run the risk of being deactivated if they break Twitter’s terms of service, and I wanted to follow bot etiquette (botiquette..!?).</p>
 
-<p>The bot tweeted every 30 minutes. Most tweets were nonsensical, however some were brilliant:</p>
+							<p>The bot tweeted every 30 minutes. Most tweets were nonsensical, however some were brilliant:</p>
 
-<p align="center">
-	<span class="image fit">
-		<img src="images/bot1.jpeg" alt="">
-	</span>
-</p>
+							<p align="center">
+								<span class="image fit">
+									<img src="images/bot1.jpeg" alt="">
+								</span>
+							</p>
 
 <p>poetic…</p>
 
