@@ -3,16 +3,30 @@
 	Story by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-
-	Note: Only needed for demo purposes. Delete for production sites.
 -->
 <html>
 	<head>
-		<title>Map</title>
+		<title>Greggs university (h)eatmap</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="title" content="Map">
-		<meta name="description" content="Map">
+
+		<meta name="Greggs university (h)eatmap" content="Map">
+		<meta name="description" content="This pioneering map-based research will help you discover the untapped Greggs-to-student ratio of the UK.">
+
+		<!-- Open Graph / Facebook -->
+			<meta property="og:type" content="website">
+			<meta property="og:url" content="https://pnewton84.github.io/greggs.html">
+			<meta property="og:title" content="Greggs university (h)eatmap">
+			<meta property="og:description" content="This pioneering map-based research will help you discover the untapped Greggs-to-student ratio of the UK.">
+			<meta property="og:image" content="https://pnewton84.github.io/images/greggs02.jpg">
+
+		<!-- Twitter -->
+			<meta property="twitter:card" content="summary_large_image">
+			<meta property="twitter:url" content="https://pnewton84.github.io/greggs.html">
+			<meta property="twitter:title" content="Greggs university (h)eatmap">
+			<meta property="twitter:description" content="This pioneering map-based research will help you discover the untapped Greggs-to-student ratio of the UK.">
+			<meta property="twitter:image" content="https://pnewton84.github.io/images/greggs02.jpg">
+
 
 		  <link rel="stylesheet" href="assets/css/main.css" />
 
@@ -37,6 +51,7 @@
 				 ga('send', 'pageview');
 			 </script>
 
+
 	</head>
 
 	<body class="is-preload">
@@ -44,13 +59,31 @@
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
 
+
+				<!-- Banner -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>Greggs university (h)eatmap</h1>
+							<p class="major">This pioneering map-based research will help you discover the untapped Greggs-to-student ratio of the UK.</p>
+								<ul class="actions stacked">
+								<li><a href="#start" class="button large wide smooth-scroll-middle">Explore the map ↓</a></li>
+								<li><a href="index.html" class="button small wide smooth-scroll-middle">← Return home</a></li>
+							</ul>
+							<p><h5>Photo by robwicks on <a href="https://unsplash.com/@robwicks">unsplash.com</a></h5></p>
+
+							</div>
+						<div class="image">
+							<img src="images/banner-sausage.jpg" alt="" />
+						</div>
+					</section>
+
 				<!-- Banner -->
 
 					<section id="start"></section>
 
 					<section class="wrapper style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="last">
 						<div class="inner">
-							<p><h2>Greggs University (h)eatmap</h2></p>
+							<p><h2>Greggs university (h)eatmap</h2></p>
 
 							<p>It’s the year 2035. The demand for higher education is up by more than 40,000 due to a rising 18-year old population. Universities are creaking at the seams. The Department of Education have tasked you - YES YOU! - in setting up a new institution, and pronto.</p>
 
@@ -60,23 +93,40 @@
 
 						<p>This pioneering map-based research will help you discover the untapped Greggs-to-student ratio of the UK.</p>
 
-							<p>The eatmap (surely heatmap? -ed) displays the locations of Greggs vs the locations of UK universities. Please, have a browse. There’s a lot to chew on.</p>
+							<p>The eatmap <em>(surely heatmap? -ed)</em> displays the locations of Greggs vs the locations of UK universities. Please, have a browse. There’s a lot to chew on.</p>
 
-							<p><div id="map" style="width: 800px; height: 600px;"></div></p>
+							<p><div id="map" style="width: 100%; height: 600px;"></div></p>
+
+							<p><h5>Pins represent universities. Heatmap shows concentration of Greggs. Works best on desktop, pins are a bit dodgy on mobile.</h5></p>
 
 							<p>So, back to it. Where to build? There’s quite a gap in Peterborough, but ARU Peterborough have beaten you to it. Oh crumbs, have they conducted this research already? Half way between Wakefield and Sheffield has potential - maybe Royston University? The University of Barnard Castle would have some great marketing angles. Or maybe in the south west, there’s enough Greggs in Wells to feed a few thousand hungry students.</p>
 
 							<p>When you’ve chosen your spot, please let the DfE (and the local Greggs branch manager) know. There’s a lot at steak (bake).</p>
 
-							<p>References: Map made using leafletjs.com. Heatmap made using patrick-wied.at/static/heatmapjs. Greggs data from the Food Standards Agency's food hygiene ratings, complied by Owen Boswarva on his blog at owenboswarva.com/blog/note-food1.htm. University location data from learning-provider.data.ac.uk (main postcodes only).</p>
+							<hr />
 
-							<p>Paul works in strategic comms and brand at Keele, the latest university to gain a campus Greggs. He’s also gluten free, so doesn’t steps foot in the place.</p>
+							<p><h5><b>References:</b> Map made using <a href="https://leafletjs.com/">leafletjs.com</a>. Heatmap made using <a href="https://www.patrick-wied.at/static/heatmapjs/">patrick-wied.at/static/heatmapjs</a>. Greggs data from the Food Standards Agency's food hygiene ratings, complied by Owen Boswarva on his blog at <a href="https://owenboswarva.com/blog/note-food1.htm">owenboswarva.com/blog/note-food1.htm</a>. University location data from <a href="http://learning-provider.data.ac.uk/">learning-provider.data.ac.uk</a> (main postcodes only).</p>
 
+							<p><em>Paul works in strategic comms and brand at Keele, the latest university to gain a campus Greggs. He’s also gluten free, so doesn’t step foot in the place.</em></h5></p>
 
 
 						</div>
 					</section>
 
+					<!-- Footer -->
+						<footer class="wrapper style1 align-center">
+							<div class="inner">
+								<ul class="actions stacked">
+									<li><a href="index.html" class="button">Return to homepage</a></li>
+								</ul>
+								<ul class="icons">
+									<li><a href="https://twitter.com/pnewton84" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.instagram.com/pnewton84" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://www.linkedin.com/in/pnewton84/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+									<li><a href="./myspace/index.html" class="icon solid style2 fa-star"><span class="label">MySpace</span></a></li>
+								</ul>
+							</div>
+						</footer>
 
 			</div>
 
