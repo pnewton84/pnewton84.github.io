@@ -2,5 +2,5 @@
     font-family: 'Palatino Linotype';
     font-style: normal;
     font-weight: 400;
-    src: url('https://fonts.cdnfonts.com/s/13595/pala.woff2') format('woff');
+    src: local('Palatino');
 }
