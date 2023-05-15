@@ -1,159 +1,230 @@
-<!DOCTYPE HTML>
-<!--
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
 
-	Note: Only needed for demo purposes. Delete for production sites.
--->
-<html>
-	<head>
-		<title>I made a Twitter bot and what it tweeted shocked me!</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="title" content="I made a Twitter bot and what it tweeted shocked me!">
-		<meta name="description" content="Twitter bots can do a lot more than just spam hashtags and relentlessly follow users. Here's how I made my Twitter bot, and what it got up to.">
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>I made a Twitter bot and what it tweeted shocked me!</title>
+    <meta name="description" content="Twitter bots can do a lot more than just spam hashtags and relentlessly follow users. Here's how I made my Twitter bot, and what it got up to.">
+    <meta name="author" content="Paul Newton">
 
-				<!-- Open Graph / Facebook -->
-					<meta property="og:type" content="website">
-					<meta property="og:url" content="https://pnewton84.github.io/bot.html">
-					<meta property="og:title" content="I made a Twitter bot and what it tweeted shocked me!">
-					<meta property="og:description" content="Twitter bots can do a lot more than just spam hashtags and relentlessly follow users. Here's how I made my Twitter bot, and what it got up to.">
-					<meta property="og:image" content="https://pnewton84.github.io/images/bot-banner.jpg">
+   <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-				<!-- Twitter -->
-					<meta property="twitter:card" content="summary_large_image">
-					<meta property="twitter:url" content="https://pnewton84.github.io/bot.html">
-					<meta property="twitter:title" content="I made a Twitter bot and what it tweeted shocked me!">
-					<meta property="twitter:description" content="Twitter bots can do a lot more than just spam hashtags and relentlessly follow users. Here's how I made my Twitter bot, and what it got up to.">
-					<meta property="twitter:image" content="https://pnewton84.github.io/images/bot-banner.jpg">
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pnewton84.github.io/bot.html">
+    <meta property="og:title" content="I made a Twitter bot and what it tweeted shocked me!">
+    <meta property="og:description" content="Twitter bots can do a lot more than just spam hashtags and relentlessly follow users. Here's how I made my Twitter bot, and what it got up to.">
+    <meta property="og:image" content="https://pnewton84.github.io/images/original/bot-banner.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://pnewton84.github.io/bot.html">
+    <meta property="twitter:title" content="I made a Twitter bot and what it tweeted shocked me!">
+    <meta property="twitter:description" content="Twitter bots can do a lot more than just spam hashtags and relentlessly follow users. Here's how I made my Twitter bot, and what it got up to.">
+    <meta property="twitter:image" content="https://pnewton84.github.io/images/original/bot-banner.jpg">
+
+    <!-- Google Analytics -->
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZPEWY6LYRJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZPEWY6LYRJ');
+</script>
+
+</head>
+
+<body id="top">
 
 
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script>
-				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-				 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
 
-				 ga('create', 'UA-40755276-2', 'auto');
-				 ga('send', 'pageview');
-		</script>
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
 
-				<!-- Banner -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-							<h1>I made a Twitter bot and what it tweeted shocked me!</h1>
-							<p class="major">Twitter bots can do a lot more than just spam hashtags and relentlessly follow users. Here's how I made my Twitter bot, and what it got up to.</p>
-								<ul class="actions stacked">
-								<li><a href="#start" class="button large wide smooth-scroll-middle">Read the blog ↓</a></li>
-								<li><a href="index.html" class="button small wide smooth-scroll-middle">← Return home</a></li>
-							</ul>
-							<p><h5>Photo by agkdesign on unsplash.com</h5></p>
+        <div class="row s-header__content">
 
-						</div>
-						<div class="image">
-							<img src="images/bot-banner.jpg" alt="" />
-						</div>
-					</section>
+            <div class="s-header__logo">
+                <a class="logo" href="index.html">
+                    <img src="images/logo.svg" alt="Homepage">
+                </a>
+            </div>
 
-					<section id="start"></section>
+            <nav class="s-header__nav-wrap">
 
-					<section class="wrapper style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="last">
-						<div class="inner">
-							<p><em>By <a href="index.html">Paul Newton</a>, April 2017</em></p>
+                <h2 class="s-header__nav-heading h6">Site Navigation</h2>
 
-							<p>A <a href="https://arxiv.org/pdf/1703.03107.pdf">recent study</a> by @USC and @IndianaUniv claims that there are as many as 48 million bot accounts on Twitter. That’s somewhere between 9% and 15% of Twitter’s active monthly users, and that figure is a ‘conservative estimate’.</p>
+                <ul class="s-header__nav">
+                    <li><a href="index.html" title="">Home</a></li>
+                    <li class="has-children">
+                        <a href="#0" title="">Categories</a>
+                        <ul class="sub-menu">
+<li><a href="family.html">Family history</a></li>
+                            <li><a href="health.html">Health</a></li>
+                            <li><a href="communications.html">Communications</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html" title="">About</a></li>
+                </ul> <!-- end header__nav -->
 
-							<p>Bot accounts are often used to automate retweets of a particular account, or retweet a specific hashtag or phrase to help boost trending topics. They exist to advertise to, or influence, human users. In another study, it was found that <a href="http://firstmonday.org/ojs/index.php/fm/article/view/7090/5653">19% of 2016 US election-related tweets</a> came from bot accounts (see <a href="http://www.politico.com/story/2016/09/donald-trump-twitter-army-228923">Inside Trump’s ‘cyborg’ Twitter army</a>). Bots can be the absolute worst part of Twitter.</p>
+                <a href="#0" title="Close Menu" class="s-header__overlay-close close-mobile-menu">Close</a>
 
-							<p>But bots can also be weirdly entertaining. Bots offer life advice (@nice_tips_bot), generate micropoetry (@poem_exe), new species of digital moths (@mothgenerator) or the moon rise (@moon_rise_bot), or simply tweet the entire works of Shakespeare line-by-line (@botspeare).</p>
+            </nav> <!-- end header__nav-wrap -->
 
-							<p>This month I set myself the challenge of making a Twitter bot. There are lots of ways to make bots (as <a href="https://botwiki.org/tutorials/twitterbots/">botwiki.org</a> explains), including using <a href="https://github.com/tommeagher/heroku_ebooks">existing code from Github</a> (written in Python and Ruby) and deploying it as an <a href="https://medium.com/science-friday-footnotes/how-to-make-a-twitter-bot-in-under-an-hour-259597558acf">app on Heroku</a>, or by using sites such as <a href="http://cheapbotsdonequick.com/">cheapbotsdonequick.com</a>. However, I made my first bot using <a href="https://medium.com/the-fake-news-reader/tiny-flashing-thumbs-how-to-bot-your-way-to-fake-news-success-f834bf44c4b4">‘SSBot’ by Zach Whalen</a>, which runs in a Google Spreadsheet.</p>
+            <a class="s-header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
 
-							<p>It was then time to decide what my bot would do. From browsing various bots, I enjoyed those that fed pre-existing text through a Markov chain algorithm and mixed it up to produce a plausible, but often nonsensical, tweet. The source text can either be predefined in a Google Sheet, or collected from another Twitter source (e.g. tweets collected from a specific account or hashtag) compiled in a <a href="https://tags.hawksey.info/">TAGS Archive</a>.</p>
+            <div class="s-header__search">
 
-							<p>I had my first bot up-and-tweeting within 20 minutes: introducing @universibot. The bot was setup to scan an archive of my organisation’s tweets, and use these to automatically generate new tweets by running them through the algorithm. The reason I did this was to see what basic artificial intelligence would make of the tweets myself and the team were sending out daily. And, if I’m honest, to make me chuckle.</p>
+                <form role="search" method="get" class="s-header__search-form" action="https://www.google.com/search?q">
+                    <label>
+                        <span class="hide-content">Search for:</span>
+                        <input type="hidden" name="sitesearch" value="pnewton84.github.io" />
+                        <input type="search" class="s-header__search-field" placeholder="Type Your Keywords" value="" name="q" title="Search for:" autocomplete="off">
+                    </label>
+                    <input type="submit" class="s-header__search-submit" value="Search">
+                </form>
 
-							<p>Because I’m a responsible bot maker ;-) I made the new account private (so the tweets wouldn’t be picked up by searches, or in fact seen by anyone but myself), and removed any hashtags or @ mentions for double measure. Bots run the risk of being deactivated if they break Twitter’s terms of service, and I wanted to follow bot etiquette (botiquette..!?).</p>
+                <a href="#0" title="Close Search" class="s-header__overlay-close">Close</a>
 
-							<p>The bot tweeted every 30 minutes. Most tweets were nonsensical, however some were brilliant:</p>
+            </div> <!-- end search wrap -->
 
-							<p align="center">
-								<span class="image fit">
-									<img src="images/bot1.jpeg" alt="">
-								</span>
-							</p>
+            <a class="s-header__search-trigger" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 18a7.952 7.952 0 004.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0018 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+            </a>
+
+        </div> <!-- end s-header__content -->
+
+    </header> <!-- end header -->
+
+
+    <!-- content
+    ================================================== -->
+    <section class="s-content s-content--single">
+        <div class="row">
+            <div class="column large-12">
+
+                <article class="s-post entry format-standard">
+
+                    <div class="s-content__media">
+                        <div class="s-content__post-thumb">
+                            <img src="images/thumbs/single/standard/bot-1050.jpg"
+                                 srcset="images/thumbs/single/standard/bot-2100.jpg 2100w,
+                                         images/thumbs/single/standard/bot-1050.jpg 1050w,
+                                         images/thumbs/single/standard/bot-525.jpg 525w" sizes="(max-width: 2100px) 100vw, 2100px" alt="">
+
+                        </div>
+                        <p align="center"><small>agkdesign on unsplash.com</small></p>
+
+                    </div> <!-- end s-content__media -->
+
+
+
+                    <div class="s-content__primary">
+
+                        <h1 class="s-content__title s-content__title--post">I made a Twitter bot and what it tweeted shocked me!</h1>
+
+                        <ul class="s-content__post-meta">
+                            <li class="date">April 19, 2017</li>
+                            <li class="cat"><a href="about.html">By Paul Newton</a></li>
+                        </ul>
+
+
+                       <p>A <a href="https://arxiv.org/pdf/1703.03107.pdf">recent study</a> by @USC and @IndianaUniv claims that there are as many as 48 million bot accounts on Twitter. That’s somewhere between 9% and 15% of Twitter’s active monthly users, and that figure is a ‘conservative estimate’.</p>
+
+                            <p>Bot accounts are often used to automate retweets of a particular account, or retweet a specific hashtag or phrase to help boost trending topics. They exist to advertise to, or influence, human users. In another study, it was found that <a href="http://firstmonday.org/ojs/index.php/fm/article/view/7090/5653">19% of 2016 US election-related tweets</a> came from bot accounts (see <a href="http://www.politico.com/story/2016/09/donald-trump-twitter-army-228923">Inside Trump’s ‘cyborg’ Twitter army</a>). Bots can be the absolute worst part of Twitter.</p>
+
+                            <p>But bots can also be weirdly entertaining. Bots offer life advice (@nice_tips_bot), generate micropoetry (@poem_exe), new species of digital moths (@mothgenerator) or the moon rise (@moon_rise_bot), or simply tweet the entire works of Shakespeare line-by-line (@botspeare).</p>
+
+                            <p>This month I set myself the challenge of making a Twitter bot. There are lots of ways to make bots (as <a href="https://botwiki.org/tutorials/twitterbots/">botwiki.org</a> explains), including using <a href="https://github.com/tommeagher/heroku_ebooks">existing code from Github</a> (written in Python and Ruby) and deploying it as an <a href="https://medium.com/science-friday-footnotes/how-to-make-a-twitter-bot-in-under-an-hour-259597558acf">app on Heroku</a>, or by using sites such as <a href="http://cheapbotsdonequick.com/">cheapbotsdonequick.com</a>. However, I made my first bot using <a href="https://medium.com/the-fake-news-reader/tiny-flashing-thumbs-how-to-bot-your-way-to-fake-news-success-f834bf44c4b4">‘SSBot’ by Zach Whalen</a>, which runs in a Google Spreadsheet.</p>
+
+                            <p>It was then time to decide what my bot would do. From browsing various bots, I enjoyed those that fed pre-existing text through a Markov chain algorithm and mixed it up to produce a plausible, but often nonsensical, tweet. The source text can either be predefined in a Google Sheet, or collected from another Twitter source (e.g. tweets collected from a specific account or hashtag) compiled in a <a href="https://tags.hawksey.info/">TAGS Archive</a>.</p>
+
+                            <p>I had my first bot up-and-tweeting within 20 minutes: introducing @universibot. The bot was setup to scan an archive of my organisation’s tweets, and use these to automatically generate new tweets by running them through the algorithm. The reason I did this was to see what basic artificial intelligence would make of the tweets myself and the team were sending out daily. And, if I’m honest, to make me chuckle.</p>
+
+                            <p>Because I’m a responsible bot maker ;-) I made the new account private (so the tweets wouldn’t be picked up by searches, or in fact seen by anyone but myself), and removed any hashtags or @ mentions for double measure. Bots run the risk of being deactivated if they break Twitter’s terms of service, and I wanted to follow bot etiquette (botiquette..!?).</p>
+
+                            <p>The bot tweeted every 30 minutes. Most tweets were nonsensical, however some were brilliant:</p>
+
+                           
+
+<figure align="center">
+<img src="images/original/bot1.jpeg" alt="">
+</figure>
 
 <p>poetic…</p>
 
-<p align="center">
-	<span class="image fit">
-		<img src="images/bot2.jpeg" alt="">
-	</span>
-</p>
+<figure align="center">
+<img src="images/original/bot2.jpeg" alt="">
+</figure>
 
 <p>just like my genuine tweets…</p>
 
-<p align="center">
-	<span class="image fit">
-		<img src="images/bot3.jpeg" alt="">
-	</span>
-</p>
+<figure align="center">
+<img src="images/original/bot3.jpeg" alt="">
+</figure>
 
 <p>suspiciously timely…</p>
 
-<p align="center">
-	<span class="image fit">
-		<img src="images/bot4.jpeg" alt="">
-	</span>
-</p>
+<figure align="center">
+<img src="images/original/bot4.jpeg" alt="">
+</figure>
 
 <p>confused…</p>
 
-<p align="center">
-	<span class="image fit">
-		<img src="images/bot5.jpeg" alt="">
-	</span>
-</p>
+<figure align="center">
+<img src="images/original/bot5.jpeg" alt="">
+</figure>
 
 <p>plain wrong…</p>
 
-<p align="center">
-	<span class="image fit">
-		<img src="images/bot6.jpeg" alt="">
-	</span>
-</p>
+<figure align="center">
+<img src="images/original/bot6.jpeg" alt="">
+</figure>
 
 <p>and this…</p>
 
-<p align="center">
-	<span class="image fit">
-		<img src="images/bot7.jpeg" alt="">
-	</span>
-</p>
-
+<figure align="center">
+<img src="images/original/bot7.jpeg" alt="">
+</figure>
 <p>But the bot also tweeted fake news, which could cause problems if the account was public…</p>
 
-<p align="center">
-	<span class="image fit">
-		<img src="images/bot8.jpeg" alt="">
-	</span>
-</p>
-
+<figure align="center">
+<img src="images/original/bot8.jpeg" alt="">
+</figure>
 <p>After a few weeks, I shut the account down. Some tweets used people’s names, or referenced important research. There was no way this bot could ever be made public. The day before I turned it off, it tweeted…</p>
 
-<p align="center">
-	<span class="image fit">
-		<img src="images/bot9.jpeg" alt="">
-	</span>
-</p>
+<figure align="center">
+<img src="images/original/bot9.jpeg" alt="">
+</figure>
 
 <p>It was as if the bot knew what was coming, and was making its last stand!</p>
 
@@ -169,35 +240,130 @@
 
 <p>If you’re going to give bot making a go, happy botting! Be good, and follow the <a href="https://botwiki.org/coc/">bot makers code of conduct</a>.</p>
 
+                           
 
-						</div>
-					</section>
+                        <p class="s-content__post-tags">
+                            <span>Tagged in :</span>
+                            <a href="communications.html">Communications</a>
+                        </p>
 
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<ul class="actions stacked">
-								<li><a href="index.html" class="button">Return to homepage</a></li>
-							</ul>
-							<ul class="icons">
-								<li><a href="https://twitter.com/pnewton84" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.instagram.com/pnewton84" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="https://www.linkedin.com/in/pnewton84/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="./myspace/index.html" class="icon solid style2 fa-star"><span class="label">MySpace</span></a></li>
-							</ul>
-						</div>
-					</footer>
 
-			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                        <div class="s-content__author">
+                            <img src="images/avatars/user-06.jpg" alt="">
 
-	</body>
+                            <div class="about">
+                                <h5>Paul Newton</h5>
+
+                                <p>Paul is Associate Director of Strategic Communications and Brand at Keele University, with responsibility of the University’s press office, internal communications, social media engagement, web development, and design functions.
+                                </p>
+
+                                <ul class="author-social">
+
+                                <li><a href="https://twitter.com/pnewton84">Twitter</a></li>
+                                <li><a href="https://instagram.com/pnewton84">Instagram</a></li>
+                                <li><a href="https://www.linkedin.com/in/pnewton84/">LinkedIn</a></li>
+                                <li><a href="myspace/index.html">MySpace</a></li>
+                                </ul>
+                            </div>
+                        </div> <!-- end s-content__author -->
+
+
+
+
+                    </div> <!-- end s-content__primary -->
+                </article>
+
+            </div> <!-- end column -->
+        </div> <!-- end row -->
+
+
+
+
+
+
+
+    </section> <!-- end s-content -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+
+        <div class="s-footer__main">
+
+            <div class="row">
+
+                <div class="column large-4 medium-6 tab-12 s-footer__info">
+
+                    <h5>About Paul</h5>
+
+                    <p>
+                    Paul is Associate Director of Strategic Communications and Brand at Keele University, with responsibility of the University’s press office, internal communications, social media engagement, web development, and design functions.
+                    </p>
+
+                </div> <!-- end s-footer__info -->
+
+                
+                <div class="column large-4 medium-6 tab-12 s-footer__info">
+
+                    <h5>Site Links</h5>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="family.html">Family history</a></li>
+                        <li><a href="health.html">Health</a></li>
+                        <li><a href="communications.html">Communications</a></li>
+                        <li><a href="about.html">About</a></li>
+
+                    </ul>
+                </div> <!-- end s-footer__info -->
+
+                <div class="column large-4 medium-6 tab-12 s-footer__info">
+
+                    <h5>Social</h5>
+
+                    <ul>
+                        <li><a href="https://twitter.com/pnewton84">Twitter</a></li>
+                        <li><a href="https://instagram.com/pnewton84">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/in/pnewton84/">LinkedIn</a></li>
+                        <li><a href="myspace/index.html">MySpace</a></li>
+                    </ul>
+
+                </div> <!-- end s-footer__info -->
+
+                
+
+            </div> <!-- end row -->
+
+        </div> <!-- end s-footer__main -->
+
+        <div class="s-footer__bottom">
+            <div class="row">
+                <div class="column">
+                    <div class="ss-copyright">
+                        <span>© Copyright Paul Newton</span>
+                        <span>Template design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                    </div> <!-- end ss-copyright -->
+                </div>
+            </div>
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"/></svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+        </div> <!-- end s-footer__bottom -->
+
+   </footer> <!-- end s-footer -->
+
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="js/jquery-3.2.1.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+
 </html>
