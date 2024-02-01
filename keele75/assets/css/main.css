@@ -1371,6 +1371,7 @@ input, select, textarea {
 	display: block;
 	max-height: 200px; /* Adjust the height as needed */
 	overflow-y: auto; /* Enables vertical scrolling */
+	-webkit-overflow-scrolling: touch;
 }
 
 .caption{ 
