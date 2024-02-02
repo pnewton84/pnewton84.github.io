@@ -1366,51 +1366,15 @@ input, select, textarea {
 
 
 
-
-
-/* Adjust styles for mobile */
-@media only screen and (max-width: 600px) {
-
-
-
-	/* MOBILE FIX CHRIS BEARD Jan 2024 */
+/* MOBILE FIX CHRIS BEARD Jan 2024 */
 .caption .text-container {
 	display: block;
-	min-height: 100vh;
+	max-height: 200px; /* Adjust the height as needed */
 	overflow-y: auto; /* Enables vertical scrolling */
-	-webkit-overflow-scrolling: touch;
-}
-.caption, .caption p {
-overflow-y: auto; /* Enables vertical scrolling */
--webkit-overflow-scrolling: touch;
- transform: translate3d(0, 0, 0); 
-
 }
 
 .caption{ 
-	background-color: rgba(51, 51, 51, 0.8);
-	color: white !important;
-}
-
-
-}
-    .poptrox-popup .caption {
-        max-height: 95vh;
-        
-		overflow-y: auto; /* Enables vertical scrolling */
--webkit-overflow-scrolling: touch;
-top: 0;
-
-    }
-    .poptrox-popup {
-        min-height: 100vh;
-		max-height: 100vh;
-		overflow-y: auto; /* Enables vertical scrolling */
-		-webkit-overflow-scrolling: touch;
-
-		position: revert !important;
-
-    }
+	background-color: rgba(51, 51, 51, 0.5);
 }
 
 
