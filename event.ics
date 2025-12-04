@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AnandChowdhary//calendar-link//EN
+BEGIN:VEVENT
+DTSTART:20251204T140000Z
+DTEND:20251204T153000Z
+DTSTAMP:20251202T112726Z
+SUMMARY:PSS Briefing
+DESCRIPTION:📆 Thursday 4th December at 2pm, via Microsoft Teams\n\nPSS Briefings are designed to bring together colleagues from across Professional Services to share important updates, changes, and opportunities for collaboration. Each session will feature key information on upcoming initiatives, events, process changes, or campaigns that may affect colleagues or require wider support across the University.\n\nEveryone is welcome to drop in at any time to hear presentations from the following speakers:\n\n💬 Paul Newton, Associate Director of Strategic Communications and Brand\n💬 Gary Rackstraw, Head of Student Records and Awards (Academic Registry)\n💬 Cheryl Dunleavy, Senior Learning Experience Designer (KIITE)\n💬 Chris Biggs, Associate Director Insight & Development, Careers (Student Futures)\n💬 Kulvinder Birring, speaking on behalf of Sharon Farrow, Placements & Projects\n💬 Lou Taylor-Murison, Head of Apprenticeships and Partnership-based Learning\n💬  Laura Davison, Head of Service Design & Continuous Improvement\n💬 Robbie Pickles, Director of GSRA\n💬 Nick Muir, Strategic Projects Manager\n💬 Claire Snape, Estates and Campus Services\n💬 Aimee Merrydew, Academic and Digital Skills Tutor (LEC)
+LOCATION:Microsoft Teams
+UID:5858
+END:VEVENT
+END:VCALENDAR
